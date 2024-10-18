@@ -1,0 +1,62 @@
+[
+    {
+        "name": "John Doe",
+        "role": "Young Professional",
+        "location": "New York, NY",
+        "image": "images/user1.jpeg"
+    },
+    {
+        "name": "Emily Smith",
+        "role": "Cheerful Teacher",
+        "location": "Los Angeles, CA",
+        "image": "images/user2.jpeg"
+    },
+    {
+        "name": "Alex Johnson",
+        "role": "Creative Artist",
+        "location": "San Francisco, CA",
+        "image": "images/user3.jpeg"
+    },
+    {
+        "name": "Michael Brown",
+        "role": "Tech Enthusiast",
+        "location": "Austin, TX",
+        "image": "images/user4.jpeg"
+    },
+    {
+        "name": "Mary Davis",
+        "role": "Friendly Grandparent",
+        "location": "Chicago, IL",
+        "image": "images/user5.jpeg"
+    },
+    {
+        "name": "Sarah Wilson",
+        "role": "Athletic Young Woman",
+        "location": "Denver, CO",
+        "image": "images/user6.jpeg"
+    },
+    {
+        "name": "David Martinez",
+        "role": "Business Executive",
+        "location": "Seattle, WA",
+        "image": "images/user7.jpeg"
+    },
+    {
+        "name": "Jessica Garcia",
+        "role": "Casual College Student",
+        "location": "Boston, MA",
+        "image": "images/user8.jpeg"
+    },
+    {
+        "name": "Sophia Rodriguez",
+        "role": "Nature Lover",
+        "location": "Portland, OR",
+        "image": "images/user9.jpeg"
+    },
+    {
+        "name": "Ethan Lee",
+        "role": "Modern Influencer",
+        "location": "Miami, FL",
+        "image": "images/user10.jpeg"
+    }
+]

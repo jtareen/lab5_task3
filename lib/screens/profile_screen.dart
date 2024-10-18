@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:lab5_task3/models/user_class.dart';
 import 'package:lab5_task3/widgets/buttons.dart';
 
 class ProfilePage extends StatelessWidget {
-  const ProfilePage({super.key});
+  const ProfilePage({super.key, required this.user});
+
+  final User user;
 
   @override
   Widget build(BuildContext context) {
@@ -22,36 +25,39 @@ class ProfilePage extends StatelessWidget {
           child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Container(
-            decoration: BoxDecoration(
-              border: Border.all(
-                  color: const Color.fromRGBO(244, 244, 244, 1.0), width: 3.0),
-              borderRadius: BorderRadius.circular(100.0),
-            ),
-            child: ClipOval(
-              child: Hero(
-                  tag: 'Profile Pic',
+          Hero(
+            tag: 'Profile Pic ${user.image}',
+            child: Container(
+              decoration: BoxDecoration(
+                border: Border.all(
+                    color: const Color.fromRGBO(244, 244, 244, 1.0),
+                    width: 3.0),
+                borderRadius: BorderRadius.circular(100.0),
+              ),
+              child: ClipOval(
                   child: Image.asset(
-                    'assets/images/image.jpeg',
-                    fit: BoxFit.cover,
-                  )),
+                user.image,
+                width: 200,
+                height: 200,
+                fit: BoxFit.cover,
+              )),
             ),
           ),
-          const Padding(
-            padding: EdgeInsets.only(top: 10.0),
+          Padding(
+            padding: const EdgeInsets.only(top: 10.0),
             child: Text(
-              'John Doe',
-              style: TextStyle(
+              user.name,
+              style: const TextStyle(
                   color: Color.fromRGBO(244, 244, 244, 1.0),
                   fontSize: 30.0,
                   fontWeight: FontWeight.w500),
             ),
           ),
-          const Padding(
-            padding: EdgeInsets.symmetric(vertical: 5.0),
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 5.0),
             child: Text(
-              'LOS ANGELES - PRODUCT DESIGNER',
-              style: TextStyle(
+              '${user.location.toUpperCase()} - ${user.role.toUpperCase()}',
+              style: const TextStyle(
                   color: Color.fromRGBO(243, 205, 171, 1.0),
                   fontSize: 18.0,
                   fontWeight: FontWeight.w500),

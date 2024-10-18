@@ -27,10 +27,10 @@ class PrimaryIconButton extends StatelessWidget {
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Icon(icon), // Icon to display
+          Icon(icon),
           if (text != null) ...[
-            SizedBox(width: 10), // Spacing between icon and text
-            Text(text!), // Text to display if provided
+            const SizedBox(width: 10),
+            Text(text!),
           ],
         ],
       ),
